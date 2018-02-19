@@ -107,7 +107,7 @@ void loop() {
     
     if (millis() >= timer3 + 3000) { //every 3 seconds update screen
       timer3 = millis();
-      Print(); // go to print function! ~so modular~
+      Print(); // go to print function! 
     }
   }
   if (pause == false) { //if it is paused
@@ -257,7 +257,7 @@ void analogUpdate(long atdiff) { //adds time of heart beat to array
       atimes[i] = atimes[i + 1]; // this should shift the whole array to the left by 1 for each time update
     }
     atimes[200] = atdiff; // this should add in the newest value
-    aChange = false; //ssets aChange back to false (will flip when next beat occurs)
+    aChange = false; //sets aChange back to false (will flip when next beat occurs)
   }
 }
 
